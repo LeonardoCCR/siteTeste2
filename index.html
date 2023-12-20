@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href=".\\Css\index.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>Site</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="menu">
+            <a href="">Inicio</a>
+            <a href="">Postagens</a>
+            <a href="">Cursos</a>
+            <a href="">Institucional</a>
+            <a href="">Equipe</a>
+            <a href="">Contato</a>
+        </nav>
+
+        <div class="logosNomeSite">
+            <div class="logos" id="logoProjeto">
+                <a href="./index.html"><img src="./images/LogoProjeto.png"></a>
+            </div>
+
+            <div id="titulo_Site">
+                <h1>Manutenção de Equipamentos Biomédicos</h1>
+                <h3>Um projeto de extensão do IF Sudeste MG - Campus Juiz de Fora</h3>
+            </div>
+
+            <div class="logos" id="logoIF">
+                <a target="_blank" href="https://www.ifsudestemg.edu.br/"><img src="./images/LogoIFJF1.png"></a>
+            </div>
+        </div>  
+    </header>
+    <div class = "carroselConfig">
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="./images/imagemCarrosel1.jpg"></div>
+        <div class="item"><img src="./images/imagemCarrosel1.jpg"></div>
+        <div class="item"><img src="./images/imagemCarrosel1.jpg"></div>
+        <div class="item"><img src="./images/imagemCarrosel1.jpg"></div>
+    </div>
+    <div class="owl-prev"><<</div>
+    <div class="owl-next">>></div>
+</div>
+
+
+    <div class="Grid">
+        <section class="NomeSecao">
+            <h1>Fique por Dentro !</h1>
+        </section>
+
+        <section class="NomeSecao">
+            <h1>Fique por Dentro !</h1>
+        </section>
+
+        <section class="NomeSecao">
+            <h1>Fique por Dentro !</h1>
+        </section>
+
+        <section class="NomeSecao">
+            <h1>Fique por Dentro !</h1>
+        </section>
+    </div>
+
+    <footer></footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+
+
+        $('.owl-carousel').owlCarousel({
+    items: 1, // Número de itens visíveis por vez
+    loop: true, // Define se o carrossel deve se repetir
+    margin: 20, // Espaçamento entre os itens
+    nav: true, // Ativação da navegação (setas)
+});
+
+    </script>
+</body>
+
+</html>
+
